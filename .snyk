@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - graphiql > codemirror-graphql > graphql-language-service-interface > graphql-config > graphql-import > lodash:
+        patched: '2020-04-30T23:14:21.964Z'
+    - graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-04-30T23:14:21.964Z'
+    - graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-config > graphql-import > lodash:
+        patched: '2020-04-30T23:14:21.964Z'
+    - graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-config > graphql-import > lodash:
+        patched: '2020-04-30T23:14:21.964Z'
+    - graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-parser > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-04-30T23:14:21.964Z'
+    - graphiql > codemirror-graphql > graphql-language-service-interface > graphql-language-service-utils > graphql-language-service-types > graphql-config > graphql-import > lodash:
+        patched: '2020-04-30T23:14:21.964Z'

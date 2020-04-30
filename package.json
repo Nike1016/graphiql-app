@@ -17,7 +17,9 @@
     "dist": "build -mwl",
     "release": "yarn dist-clean && yarn build && build -mwl",
     "test": "npm run build",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Adam Miskiewicz <adam.skevy@mac.com> (http://github.com/skevy)",
   "license": "MIT",
@@ -40,7 +42,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-modal": "^2.0.2",
-    "uuid": "^3.1.0"
+    "uuid": "^3.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "asar": "^0.13.0",
@@ -120,5 +123,6 @@
     "nsis": {
       "perMachine": true
     }
-  }
+  },
+  "snyk": true
 }
